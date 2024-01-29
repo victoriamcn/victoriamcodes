@@ -1,3 +1,17 @@
+:root {
+  /* neutrals */
+  --dark: #1E1B15;
+  --light: #f5f5f5;
+  --gray: #CFC2BE;
+   /* colors */
+   --green: #2B4735;
+   --orange-vibrant: #EE583F;
+   --orange-dull:#D1603C;
+   --pink-redviolet: #C53C80;
+   --pink-light: #F4DEDC;
+  }
+
+
 @font-face {
   font-family: 'Inter var';
   font-style: normal;
@@ -15,6 +29,7 @@
 }
 
 body {
+  background: var(--light);
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -25,6 +40,7 @@ body {
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
 }
+
 b,
 strong,
 h3,
@@ -34,10 +50,30 @@ h6 {
   font-variation-settings: 'wght' 650;
 }
 h1 {
+  color: var(--orange-vibrant) !important;
   font-variation-settings: 'wght' 850;
 }
 h2 {
   font-variation-settings: 'wght' 750;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--dark) !important;
+}
+
+strong {
+  color: var(--green) !important;
+}
+
+code {
+  font-weight: lighter !important;
+  color: var(--dark) !important;
+  background-color: var(--gray)  !important;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -57,9 +93,27 @@ img.next-image {
 }
 
 .prose a {
-  color: #0074de;
+  color: var(--pink-redviolet);
 }
 
 .nav-line .nav-link {
-  color: #69778c;
+  color: var(--green-dark);
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: var(--orange-dull) !important;
+  padding: .25 rem;
+}
+a:hover {
+  border-radius: 50px ;
+  background-color: var(--pink-light);
+  color: var(--orange-vibrant) !important;
+  cursor: pointer;
+}
+
+a:active, a:visited {
+  background-color: var(--pink-light);
+  color: var(--orange-vibrant) !important;
 }

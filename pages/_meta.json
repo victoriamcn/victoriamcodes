@@ -1,0 +1,23 @@
+{
+    "index": "Home",
+    "github_link": {
+      "title": "GitHub",
+      "href": "https://github.com/victoriamcn",
+      "newWindow": true
+    },
+    "medium_link": {
+        "title": "Medium",
+        "href": "https://medium.com/@vmcnorrill",
+        "newWindow": true
+    },
+    "linkedin_link": {
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/in/victoria-mcnorrill/",
+        "newWindow": true
+     },
+     "spotify_link": {
+        "title": "Spotify",
+        "href": "https://open.spotify.com/user/torilizabeth95",
+        "newWindow": true
+     }
+  }

@@ -21,6 +21,9 @@ export default function Document() {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} /> */}
+        {/* <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css"></link>
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"></link>
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"></link> */}
       </Head>
       <body>
         <Main />
