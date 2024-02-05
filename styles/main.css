@@ -62,7 +62,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+.content {
   color: var(--dark) !important;
 }
 
@@ -113,7 +114,27 @@ a:hover {
   cursor: pointer;
 }
 
-a:active, a:visited {
+ p>a:visited {
+  color: var(--green) !important;
+}
+
+span {
+  border-radius: 50px;
   background-color: var(--pink-light);
   color: var(--orange-vibrant) !important;
+}
+
+h2>.homedescription{
+  color: var(--pink-redviolet) !important;
+}
+
+.homePhotosDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.homeMainPhoto, .homeExtraPhotos {
+  margin: 10px !important;
+  border-radius: 8px !important;
 }

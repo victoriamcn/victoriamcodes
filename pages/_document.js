@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: 'Victoria McNorrill | Software Developer',
     description: "Hello there. I'm Victoria, a software engineer passionate about UX Design, Artificial Intelligence (AI), sustainability in tech and community involvement. On my website, you can explore a curated collection of my work, including my coding projects, articles, and experiences in the tech industry here. Let's connect!",
-    image: '/Users/Victoria/Desktop/victoriamcodes/public/images/photos of me/professionalportrait square.png'
+    image: '/public/images/photos of me/professionalportrait square.png'
   }
 
   return (
