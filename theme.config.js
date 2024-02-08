@@ -3,6 +3,20 @@ const YEAR = new Date().getFullYear()
 export default {
   footer: (
     <footer>
+      <p style={{ display: 'block', marginTop: '8rem' }}>
+        <a href="https://github.com/victoriamcn" className="footerLinks">
+          GitHub
+        </a>
+        <a href="https://medium.com/@vmcnorrill" className="footerLinks">
+          Medium
+        </a>
+        <a href="https://www.linkedin.com/in/victoria-mcnorrill/" className="footerLinks">
+          LinkedIn
+        </a>
+        <a href="https://open.spotify.com/user/torilizabeth95" className="footerLinks">
+          Spotify
+        </a>
+      </p>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <time>{YEAR}</time> © Victoria McNorrill.
         <a href="/feed.xml">RSS</a>
@@ -18,12 +32,6 @@ export default {
           }
         `}</style>
       </small>
-      <p style={{ display: 'block', marginTop: '8rem' }}>
-      <a href="https://github.com/victoriamcn">GitHub</a>
-      <a href="https://medium.com/@vmcnorrill">Medium</a>
-      <a href="https://www.linkedin.com/in/victoria-mcnorrill/">LinkedIn</a>
-      <a href="https://open.spotify.com/user/torilizabeth95">Spotify</a>
-    </p>
-  </footer>
+    </footer>
   )
 }

@@ -49,10 +49,7 @@ h5,
 h6 {
   font-variation-settings: 'wght' 650;
 }
-h1 {
-  color: var(--orange-vibrant) !important;
-  font-variation-settings: 'wght' 850;
-}
+
 h2 {
   font-variation-settings: 'wght' 750;
 }
@@ -63,18 +60,16 @@ h4,
 h5,
 h6,
 p,
-.content {
-  color: var(--dark) !important;
-}
-
+.tableofcontents,
+.content,
 strong {
-  color: var(--green) !important;
+  color: var(--dark) !important;
 }
 
 code {
   font-weight: lighter !important;
   color: var(--dark) !important;
-  background-color: var(--gray)  !important;
+  background-color: var(--pink-light)  !important;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -93,29 +88,22 @@ img.next-image {
   margin: 0;
 }
 
-.prose a {
-  color: var(--pink-redviolet);
-}
-
-.nav-line .nav-link {
-  color: var(--green-dark);
-}
-
-a {
+a, li {
   font-weight: bold;
   text-decoration: none !important;
   color: var(--orange-dull) !important;
-  padding: .25 rem;
+  padding: .5rem;
 }
-a:hover {
+
+a:hover, li:hover {
   border-radius: 50px ;
   background-color: var(--pink-light);
   color: var(--orange-vibrant) !important;
   cursor: pointer;
 }
 
- p>a:visited {
-  color: var(--green) !important;
+ p>a.footerLinks {
+  margin-left: 5px;
 }
 
 span {
@@ -130,8 +118,9 @@ h2>.homedescription{
 
 .homePhotosDiv {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+
 }
 
 .homeMainPhoto, .homeExtraPhotos {

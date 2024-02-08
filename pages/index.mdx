@@ -11,35 +11,50 @@ import Image from 'next/image'
 ---
 
 <div align="center" className="content">
+  <a href="/projects">
   <Image
-    src="/images/photos of me/professionalportrait square.png"
+    src="/images/{ codes }.png"
     alt="black and white portrait of Victoria McNorrill"
-    width={150}
-    height={150}
+    height={250}
+    width={600}
     priority
     className="next-image homeMainPhoto"
     placeholder="data:image/"
   />
+  </a>
 </div>
-
-<h1 align="center">
-  Victoria McNorrill
-</h1>
 
 <h2 align="center" className="homedescription">
   Software Developer · Writer · Side Quest Queen
 </h2>
 
-<h2 align="center">
-  I code for people, places and things.
-</h2>
-
-<div className="homePhotosDiv">
+<div className="homePhotosDiv" display="flex" justify-content="center">
+    
+  <Image
+    src="/images/photos of me/trinitycollege.png"
+    alt="Victoria in Trinity College Library"
+    width={150}
+    height={150}
+    priority
+    className="next-image homeExtraPhotos"
+    placeholder="data:image/"
+  />
+  
+  <Image
+    src="/images/photos of me/professionalportrait square.png"
+    alt="Headshot of Victoria"
+    width={155}
+    height={150}
+    priority
+    className="next-image homeMainPhoto"
+    placeholder="data:image/"
+  />
+  
   <Image
     src="/images/photos of me/cliffsofmoher.png"
-    alt="black and white portrait of Victoria McNorrill"
-    width={250}
-    height={250}
+    alt="Victoria at the Cliffs of Moher, Ireland"
+    width={150}
+    height={150}
     priority
     className="next-image homeExtraPhotos"
     placeholder="data:image/"
@@ -47,9 +62,9 @@ import Image from 'next/image'
 
   <Image
     src="/images/photos of me/sanddunes.png"
-    alt="black and white portrait of Victoria McNorrill"
-    width={250}
-    height={250}
+    alt="Victoria at the Great Sand Dunes National Park, Colorado"
+    width={150}
+    height={150}
     priority
     className="next-image homeExtraPhotos"
     placeholder="data:image/"
